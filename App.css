@@ -1,0 +1,272 @@
+
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.address-list {
+  font-size: 15px;
+  align-items: center;
+  width: 100%;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  word-wrap: normal;
+  /* overflow:hidden; */
+}
+.address-list > h6 {
+  font-size: 13px;
+  /* align-items:flex-end; */
+  width: 100%;
+}
+
+.address-buttons {
+  display:inline;
+  font-size: 15px;
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  border-color: dodgerblue;
+  align-items: center;
+  padding: 5px;
+  overflow:hidden;
+  flex-wrap: nowrap;
+}
+
+.address-delete {
+  display: inline;
+  font-size: 15px;
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  border-color: dodgerblue;
+  align-items: center;
+  padding: 5px;
+  overflow:hidden;
+  flex-wrap: nowrap;
+}
+
+.address-buttons:hover {
+  border-color: red;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.address-delete:hover {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.blockchain-txns {
+  /* d-flex row col-sm-12 text-center */
+  margin-top: 10px;
+  justify-content: center;
+  /* margin: auto; */
+  /* align-content: center ; */
+  text-align: center;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  word-wrap: normal;
+  overflow: hidden;
+  background-color: rgb(62, 61, 66);
+}
+
+.blockchain-txns-hash {
+  /* width:30%; */
+  overflow:hidden;
+  /* align-items: center; */
+  word-wrap: normal;
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-symbol {
+  /* width:10%; */
+  /* overflow:hidden; */
+  /* align-items: center; */
+  /* border: 1px dashed whitesmoke; */
+  font-size: x-small ;
+}
+
+.blockchain-txns-blocknumber {
+  /* width:10%; */
+  overflow:hidden;
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-timestamp {
+  /* width:20%; */
+  overflow:hidden;
+  text-align: start;
+  /* word-wrap: normal; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-from {
+  /* width:30%; */
+  overflow:hidden;
+  word-wrap: normal;
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-to {
+  /* width:30%; */
+  overflow:hidden;
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-value {
+  /* width:25%; */
+  overflow:hidden;
+  word-wrap: normal;
+  text-align: start;
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header {
+  /* width:100%; */
+  width:99%;
+  height: 30px;
+  align-content:flex-start;
+  overflow:hidden;
+}
+
+.blockchain-txns-header-hash {
+  /* width:30%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-symbol {
+  /* width:10%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-blocknumber {
+  /* width:10%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-timestamp {
+  /* width:20%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-from {
+  /* width:30%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-to {
+  /* width:30%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.blockchain-txns-header-value {
+  /* width:25%; */
+  /* border: 1px dashed whitesmoke; */
+}
+
+.content  {
+  background-color: #1d1d1d;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 8px;
+  z-index: 1
+}
+
+.content > div {
+  width: 25%;
+  padding-right: 8px
+}
+
+.content > div:last-child { /* tile 6 */
+  padding-right: 0;
+  width: 75%
+}
+
+@media (max-width:992px) {
+  .content {
+    display: block;
+    overflow-y: auto;
+  }
+
+  .content > div {
+    width: 100%!important;
+    padding-right: 0;
+    padding-bottom: 8px
+  }
+}
+
+.vertical > div {
+  height: 100%
+}
+
+.vertical-split {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap
+}
+
+.vertical-split > div {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden
+}
+
+.vertical-split > div:first-child {
+  margin-bottom: 8px
+}
+
+.vertical-split:last-child > div:first-child {
+  height: 100%
+}
+
+.vertical-split:last-child > div:last-child {
+  height: 0%
+}
+
+@media (max-width:992px) {
+  .vertical-split {
+    display: block
+  }
+  .vertical-split > div,
+  .vertical-split > div:first-child {
+    height: auto
+  }
+}
+
+.card {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.card-header {
+  padding: 8px 4px;
+}
+
+.card-body{
+  flex: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 2px;
+}
