@@ -13,10 +13,6 @@
 - I used bootstrap cards
 - The colors used are #007bff, #1d1d1d, and #95999c
 
-* Title Crypto Whale Tracker
-        Live hosting on Heroku
-    - https://crypto-whale-tracker.netlify.app/
-
 * Overview
 This app is a DeFi DApp based on Smart Contract ERC20 Token standards and Ethereum Blockchain. The user can securely connect to the Ehterscan network and fetch data from a wallet he/she wishes to track for analytical purposes and maintain a saved list of wallets they wish to track on a consistent basis.
 
@@ -75,21 +71,6 @@ This app is a DeFi DApp based on Smart Contract ERC20 Token standards and Ethere
             }
             return convertedValue;
         }
-
-* Screenshots Of The App
-    * ![](/project_images/app_image1.jpg)
-    * ![](/project_images/app_image2.jpg)
-
-* Screenshots Testing The App
-    * ![](/project_images/app_test1.jpg)
-    * ![](/project_images/app_test2.jpg)
-
-* Logo
-    * ![](/src/components/logo.png)
-
-* Developer Team
-    * Jose Tollinchi
-    * https://github.com/AnaIitico
 
 * Resources
     * https://etherscan.io/apis
